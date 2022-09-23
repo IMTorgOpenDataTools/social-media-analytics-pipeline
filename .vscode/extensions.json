@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "GrapeCity.gc-excelviewer",
+        "Gruntfuggly.todo-tree",
+        "hbenl.vscode-test-explorer",
+        "littlefoxteam.vscode-python-test-adapter",
+        "lonefy.vscode-JS-CSS-HTML-formatter",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-vscode.live-server",
+        "ms-vscode.test-adapter-converter",
+        "ryanluker.vscode-coverage-gutters",
+        "uctakeoff.vscode-counter"
+    ]
+}
