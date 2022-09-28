@@ -14,7 +14,7 @@ from _constants import (
     sub_reddits
 )
 
-from reddit import Reddit
+from .reddit import Reddit
 
 
 
@@ -31,7 +31,10 @@ def parse_arguments():
 
 def main(args):
     data = Reddit(reddit_api_credentials, sub_reddits)
-    data.get_text()
+    text = data.get_text()
+    return text
+
+
 
 
 if __name__ == '__main__':

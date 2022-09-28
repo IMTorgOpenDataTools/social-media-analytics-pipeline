@@ -43,6 +43,16 @@ def search_reddits(reddit):
 
 
 class Reddit:
+    """
+    TODO:
+    * am I combining all submissions and comments or losing some?
+    * how do I mod to get more data?
+    * how to combine graphs of multiple sub_reddits?
+
+    Review results:
+    df = pd.read_pickle('./data/reddit.serial')
+    
+    """
 
     dtypes = np.dtype([
             ('type', str),
