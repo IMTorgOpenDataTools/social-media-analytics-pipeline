@@ -50,6 +50,7 @@ tomli = "==2.0.1"
 uritemplate = "==4.1.1"
 urllib3 = "==1.26.12"
 graphipy = {editable = true, ref = "master", git = "https://github.com/IMTorgOpenDataTools/GraphiPy.git"}
+spacy = "*"
 
 [dev-packages]
 

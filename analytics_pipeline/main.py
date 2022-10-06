@@ -31,7 +31,7 @@ def parse_arguments():
 
 def main(args):
     data = Reddit(reddit_api_credentials, sub_reddits)
-    text = data.get_text()
+    text = data.get_text_bodies_from_subreddits()
     return text
 
 

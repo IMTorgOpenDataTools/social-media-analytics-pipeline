@@ -18,9 +18,17 @@ sys.path.append(Path('..').absolute().as_posix() )
 
 
 
+
+# data source
+banking = ["banks"]
+finance = ["finance"]
+
+subreddits = banking + finance
+
+
 # system variables
 config = {}
-config['data_export'] = './data/reddit.serial'
+config['data_export'] = './data/reddit'
 config['logging_dir'] = './data/process.log'
 """
 emails_file = './config/emails.csv'
@@ -29,10 +37,14 @@ email_network_drive = r'\\hqfiles01\sec_edgar$\cbdc_tracker'
 report_dir = './downloads'
 report_copy_dir = './downloads'
 """
-sub_reddits=["banks"]
+for path in config.values():
+    dir = Path(path).parents[0]
+    dir.mkdir(parents=True, exist_ok=True)
 
 
 # logging
+f = open(config['logging_dir'], 'w+')
+f.close()
 logzero.loglevel(logzero.INFO)                                           #set a minimum log level: debug, info, warning, error
 logzero.logfile(config['logging_dir'], maxBytes=1000000, backupCount=3)            #set rotating log file
 logger.info('logger created, constants initialized')
